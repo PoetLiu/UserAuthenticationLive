@@ -1,0 +1,20 @@
+<%- include("./partials/header.ejs") %>
+
+    <body>
+        <h3>Welcome to login page</h3>
+        <h3><%= msg %></h3>
+        <form action="/login" method="POST">
+            <div class="mb-3 col-sm-6">
+                <label for="uemail" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="uemail" aria-describedby="emailHelp" name="email">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+            <div class="mb-3 col-sm-6">
+              <label for="upwd" class="form-label">Password</label>
+              <input type="password" class="form-control" id="upwd" name="pwd">
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+    </body>
+
+    </html>

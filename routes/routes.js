@@ -7,6 +7,7 @@ const router = express.Router();
 router.get("/login", Controller.login_get);
 router.post("/login", Controller.login_post);
 
+router.get("/", Controller.home_get);
 router.get("/home", Controller.home_get);
 
 // adding middleware to dashboard route 
